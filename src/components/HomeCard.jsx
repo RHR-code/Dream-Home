@@ -31,7 +31,11 @@ const HomeCard = ({ home }) => {
     <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden font-sans">
       {/* Image Section */}
       <div className="relative">
-        <img src={image} alt={title} className="w-full h-56 object-cover" />
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-56 object-cover transition-transform duration-500 hover:scale-110"
+        />
         {/* Badges */}
         <div className="absolute top-4 right-4 flex gap-2">
           <div className="bg-green-500 text-white px-3 py-2 rounded-md shadow-md">
