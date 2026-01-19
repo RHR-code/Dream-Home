@@ -9,6 +9,9 @@ const Navbar = () => {
         {" "}
         <NavLink href={"/"}>Home</NavLink>{" "}
       </li>
+      <li>
+        <NavLink href={"/all-homes"}>All Homes</NavLink>{" "}
+      </li>
     </>
   );
   return (
@@ -45,7 +48,7 @@ const Navbar = () => {
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className=" px-1">{links}</ul>
+          <ul className="flex gap-5 px-1">{links}</ul>
         </div>
         <div className="navbar-end gap-5">
           <a className="btn btn-primary">Sign Up</a>

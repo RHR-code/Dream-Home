@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaMapMarkerAlt,
@@ -87,9 +88,12 @@ const HomeCard = ({ home }) => {
             </span>
           </div> */}
           <div>
-            <button className="btn btn-primary btn-outline">
+            <Link
+              href={`/all-homes/${home._id}`}
+              className="btn btn-primary btn-outline"
+            >
               View Details
-            </button>
+            </Link>
           </div>
           <div className="text-2xl font-bold text-purple-600">
             ${price.toLocaleString()}
