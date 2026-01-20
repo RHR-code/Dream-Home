@@ -21,7 +21,7 @@ import { MdPlace } from "react-icons/md";
 const HomeDetailsPage = async ({ params }) => {
   const { id } = await params;
   const homeData = await (
-    await fetch(`http://localhost:5000/homes/${id}`)
+    await fetch(`https://dream-home-server-omega.vercel.app/homes/${id}`)
   ).json();
 
   return (

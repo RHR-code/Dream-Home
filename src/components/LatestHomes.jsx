@@ -4,7 +4,7 @@ import HomeCard from "./HomeCard";
 
 const LatestHomes = async () => {
   const homeData = await (
-    await fetch("http://localhost:5000/latest-homes")
+    await fetch("https://dream-home-server-omega.vercel.app/latest-homes")
   ).json();
 
   return (

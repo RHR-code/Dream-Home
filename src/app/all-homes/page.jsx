@@ -2,7 +2,9 @@ import HomeCard from "@/components/HomeCard";
 import React from "react";
 
 const page = async () => {
-  const homeData = await (await fetch("http://localhost:5000/homes")).json();
+  const homeData = await (
+    await fetch("https://dream-home-server-omega.vercel.app/homes")
+  ).json();
 
   return (
     <div>

@@ -1,3 +1,37 @@
+# DreamHome
+
+A modern, responsive real estate platform built with NextJs and Tailwind/DaisyUI. Users can browse, search, and filter properties with detailed listings including price, location, property type, and images. Each property features a full description, key amenities, and high-quality visuals for an immersive experience. Designed for ease of use and scalability, this project showcases a clean UI/UX, smooth animations, and mobile-friendly design.
+
+[Live Website Link](https://dream-home-7bkx8yc61-rh-ratuls-projects.vercel.app/)
+
+#### Technology Used :
+
+    - "axios": "^1.13.2",
+    - "daisyui": "^5.5.14",
+    - "next": "16.1.3",
+    - "react": "19.2.3",
+    - "react-dom": "19.2.3",
+    - "react-hot-toast": "^2.6.0",
+    - "react-icons": "^5.5.0"
+
+#### Start the development :
+
+```bash
+git clone https://github.com/RHR-code/Dream-Home.git
+```
+
+#### Change Directory:
+
+```arduino
+cd Dream-Home
+```
+
+#### Start Website:
+
+```arduino
+npm run dev
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
