@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
@@ -31,8 +32,15 @@ const HomeCard = ({ home }) => {
     <div className="w-full max-w-sm bg-white rounded-2xl shadow-lg overflow-hidden font-sans">
       {/* Image Section */}
       <div className="relative">
-        <img
+        {/* <img
           src={image}
+          alt={title}
+          className="w-full h-56 object-cover transition-transform duration-500 hover:scale-110"
+        /> */}
+        <Image
+          src={image}
+          width={200}
+          height={200}
           alt={title}
           className="w-full h-56 object-cover transition-transform duration-500 hover:scale-110"
         />

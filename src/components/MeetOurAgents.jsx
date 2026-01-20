@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
@@ -48,7 +49,14 @@ const MeetOurAgents = () => {
             <div key={agent.id} className="group cursor-pointer">
               {/* Image Container */}
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[3/4] shadow-lg">
-                <img
+                {/* <img
+                  src={agent.image}
+                  alt={agent.name}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                /> */}
+                <Image
+                  width={200}
+                  height={200}
                   src={agent.image}
                   alt={agent.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"

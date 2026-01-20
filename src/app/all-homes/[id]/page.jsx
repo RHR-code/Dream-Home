@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   FaMapMarkerAlt,
@@ -60,9 +61,16 @@ const HomeDetailsPage = async ({ params }) => {
           <div className="lg:col-span-2 space-y-6">
             {/* Image */}
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
+              {/* <img
                 src={homeData.image}
                 alt={homeData.title}
+                className="w-full h-96 object-cover"
+              /> */}
+              <Image
+                src={homeData.image}
+                alt={homeData.title}
+                width={600}
+                height={600}
                 className="w-full h-96 object-cover"
               />
               <div className="absolute top-6 left-6">

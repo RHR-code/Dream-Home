@@ -5,6 +5,7 @@ import LatestHomes from "@/components/LatestHomes";
 import MeetOurAgents from "@/components/MeetOurAgents";
 import Newsletter from "@/components/NewsLetter";
 import PartnersSection from "@/components/PartnersSection";
+import Statistics from "@/components/Statistics";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <FAQ />
       <PartnersSection />
       <Newsletter />
+      <Statistics />
     </div>
   );
 }

@@ -1,8 +1,14 @@
 import Link from "next/link";
 import React from "react";
+import { links } from "./Links";
 import NavLink from "./NavLink";
+import { cookies } from "next/headers";
+import Logout from "./Logout";
+const Navbar = async () => {
+  const cookieStore = await cookies();
+  const loggedIn = cookieStore.has("login");
+  console.log(loggedIn);
 
-const Navbar = () => {
   const links = (
     <>
       <li>
@@ -14,6 +20,7 @@ const Navbar = () => {
       </li>
     </>
   );
+
   return (
     <div>
       <div className="navbar bg-base-100 shadow-sm">
@@ -40,6 +47,7 @@ const Navbar = () => {
               tabIndex="-1"
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
+              {/* {links} */}
               {links}
             </ul>
           </div>
@@ -51,8 +59,18 @@ const Navbar = () => {
           <ul className="flex gap-5 px-1">{links}</ul>
         </div>
         <div className="navbar-end gap-5">
-          <a className="btn btn-primary">Sign Up</a>
-          <a className="btn btn-primary btn-outline">Sign In</a>
+          {loggedIn ? (
+            <Logout />
+          ) : (
+            <>
+              <Link
+                href={"/login"}
+                className="btn btn-primary hover:scale-105 transition-transform ease-in-out duration-150 "
+              >
+                Sign In
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </div>
